@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Signup Page</h1>
+    <form action="/signup" method="POST">
+    <div><input type="text" name="name" id="name" placeholder="Enter Your Name"></div>
+    <div><input type="text" name="pass" id="pass" placeholder="Enter Your Password"></div>
+    <p>{{#if msg}}
+        {{msg}}
+        {{/if}}</p>
+    <button type="submit">signup</button>
+    </form>
+    <div>
+        Already have account?<a href="/login">login</a>
+    </div>
+    </div>
+</body>
+</html>
